@@ -34,8 +34,6 @@ const App = () =>{
       const ctx = c.getContext("2d");
       setCanvas(c);
       setContext(ctx);
-      console.log('context: ', context === null);
-
     }
   }, [context])
 
@@ -69,8 +67,7 @@ const App = () =>{
         const src  = reader.result as string;
         drawImage(src);
       };
-      const imgUrl = e.currentTarget.files[0]; //;createObjectURL(file);
-      setImgSrc(createObjectURL(imgUrl));
+      setImgSrc(createObjectURL(file));
     }
   };
   
