@@ -91,18 +91,18 @@ const App = () =>{
 
   return (
     <>
-    <Container>
-      <ImgContainer>
-        <p>image</p>
-        <img src={imgSrc} width="50%" height="auto" alt=""/>
-      </ImgContainer>
-      <CanvasArea>
-        <p>canvas</p>
-        <canvas ref={canvasRef} id="canvas" />
-        <br />
-      </CanvasArea>
-    </Container>
-    <input type="file" onChange={handleChangeFile} />        
+      <Container>
+        <ImgContainer>
+          <p>image</p>
+          <img src={imgSrc} width="50%" height="auto" alt=""/>
+        </ImgContainer>
+        <CanvasArea>
+          <p>canvas</p>
+          <canvas ref={canvasRef} id="canvas" />
+          <br />
+        </CanvasArea>
+      </Container>
+      <input type="file" onChange={handleChangeFile} />        
     </>
   );
 }
