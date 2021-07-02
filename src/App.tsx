@@ -35,7 +35,7 @@ const App = () =>{
       setCanvas(c);
       setContext(ctx);
     }
-  }, [context])
+  }, [context]);
 
   useEffect(() => {
     if (canvas !== null) {
@@ -82,6 +82,9 @@ const App = () =>{
       canvas!.width = img.width * zoom;
       canvas!.height = img.height * zoom;
       context?.drawImage(img, 0, 0, img.width * zoom, img.height * zoom);
+      context!.fillStyle = 'orange';
+      context!.fillRect(200, 200, 30, 30);
+
     }
   };
 
